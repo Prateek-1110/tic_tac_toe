@@ -1,3 +1,8 @@
+/*
+Jai Shri Krishna 
+This is tic tac toe by Prateek Agrahari 
+Hope you enjoy it 
+*/
 const board = document.getElementById("board");
 const statusText = document.getElementById("status");
 let boardState = ["", "", "", "", "", "", "", "", ""];
@@ -119,15 +124,16 @@ function handleDraw() {
         return endGame("Draw! No more moves to remove.");
     }
     
-    let lastMove = moveHistory.pop();
-    let secondLastMove = moveHistory.pop();
+    let firstMove = moveHistory.shift();
+    let secondMove = moveHistory.shift();
 
-    boardState[lastMove] = "";
-    boardState[secondLastMove] = "";
+    boardState[firstMove] = "";
+    boardState[secondMove] = "";
 
     isPlayerTurn = true;
     createBoard();
 }
+
 
 function endGame(message) {
     alert(message);

@@ -117,9 +117,9 @@ void computerMove() {
 
 void removeLastTwoMoves() {
     for (int i = 0; i < 2 && !moves.empty(); i++) {
-        pair<int, int> lastMove = moves.back();
-        board[lastMove.first][lastMove.second] = '-';
-        moves.pop_back();
+        pair<int, int> firstMove = moves.front();
+        board[firstMove.first][firstMove.second] = '-';
+        moves.erase(moves.begin());
     }
 }
 
