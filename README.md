@@ -14,7 +14,7 @@ A simple **Tic-Tac-Toe game** where you play against the computer. The game foll
 1️⃣ Run the game in **C++**.  
 2️⃣ Enter a number (1-9) to place your move.  
 3️⃣ Computer will make its move automatically.  
-4️⃣ The game **removes last two moves on a draw** and continues.  
+4️⃣ The game **removes first two moves on a draw** and continues.  
 5️⃣ Enter **0 to exit** anytime.  
 
 ---
